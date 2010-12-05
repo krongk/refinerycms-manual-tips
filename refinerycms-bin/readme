@@ -1,0 +1,47 @@
+C:\Ruby187\lib\ruby\gems\1.8\gems\refinerycms-0.9.8.5\bin
+
+1. in 'refine!' method
+ - overwrite my postgresql suitable database.yml
+   #line 158
+	    db_name = @app_name
+			postgresql_str = "#the config for postgresql on my local machine"
+			postgresql_str += "\ndevelopment:\n    adapter: postgresql\n    host: localhost\n    port: 5432\n    " +
+				"username: postgres\n    password: kenrome\n    database: #{db_name}\n    schema_search_path: public\n    encoding: unicode\n"
+						postgresql_str += "\nproduction:\n    adapter: postgresql\n    host: localhost\n    port: 5432\n    " +
+				"username: postgres\n    password: kenrome\n    database: #{db_name}\n    schema_search_path: public\n    encoding: unicode\n"
+						postgresql_str += "\ntest:\n    adapter: postgresql\n    host: localhost\n    port: 5432\n    " +
+				"username: postgres\n    password: kenrome\n    database: #{db_name}\n    schema_search_path: public\n    encoding: unicode\n"
+					
+      File.open(@app_path.join('config', 'database.yml'), "w") do |f|
+        f.write postgresql_str
+      end
+ - copy the refinerycms's Gemfile to overwrite app's Gemfile
+   (the origin just copy the refinery needed gems, but I will copy all)
+	 -- prepare: add < gem 'pg',   '~> 0.9.0' > to origin Gemfile
+      #line 170
+      gemfile_contents = File.read(Refinery.root.join('Gemfile'))
+      File.open(@app_path.join('Gemfile'), "w") do |f|
+        f.write gemfile_contents
+      end
+	 found the reason: the rails normally add < gem 'pg' > on Gemfile, and then bundle will go to find the last released gem '0.10.0'
+	    but the '0.10.0' occur a compiled error, say don't found XXX.h file...
+			so, we should add the version '~> 0.9.0' on it.
+2. in 'output!' method
+ - replace the git command, because some how it doesn't valid.
+   #line 222
+	 replase: run_command("git init && git add . && git commit -m 'Initial Commit'")
+				
+	 as:	run_command("git init")
+				puts "git add"
+				run_command("git add .")
+				puts "git commit"
+				run_command("git commit -m \"init first\" ")
+	 found the reason: 
+	    the cmd can parse "git commit -m \"init first\" " but can not parse "git commit -m 'init first' "
+3. add another Collaborator on heroku
+   #line 235
+	 puts "\n\n add sharing kenrome@163.com"
+	 run_command("heroku sharing:add 'kenrome@163.com'")
+4. open the site when completed
+   #line 270
+	 run_command("heroku open")

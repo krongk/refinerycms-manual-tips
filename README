@@ -1,10 +1,15 @@
 # this app just for me.
 to backup some code about refinerycms.
 to store some tutorials, tips.
+http://hi.baidu.com/kenrome/blog/item/11b106b304ba0cb6d8335aeb.html
 
+Steps:
+ -$ refinerycms app_name -d postgresql --heroku app_name
+   
 To-Do-List:
 1. manually config the refinerycms on my PC
- - 
- - 
+ - /refinerycms-0.9.8.5/bin/refinerycms
+ - /refinerycms-0.9.8.5/Gemfile
+
 2. Translate I18n to Chinese
- - 
+ - translate every cn-ZH.yml on each engines
