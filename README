@@ -5,11 +5,38 @@ http://hi.baidu.com/kenrome/blog/item/11b106b304ba0cb6d8335aeb.html
 
 Steps:
  -$ refinerycms app_name -d postgresql --heroku app_name
-   
-To-Do-List:
+    refinerycms app_name -d postgresql -u postgres -p kenrome --heroku app_name
+		refinerycms homekeeping -d postgresql -u postgres -p kenrome --heroku homekeeping
+Change log:
 1. manually config the refinerycms on my PC
  - /refinerycms-0.9.8.5/bin/refinerycms
+   -  Copy postgreSQL setting to database.yml
+	 -  Copy all Gemfile to app
+	 -  Change git command run_command("git commit -m 'Initial Commit'") to  run_command("git commit -m \"initial Commit\" ")
+	 -  Skip test bundler. run_command("bundle install --without test")
  - /refinerycms-0.9.8.5/Gemfile
 
 2. Translate I18n to Chinese
  - translate every cn-ZH.yml on each engines
+
+3. error list
+ - when push to heroku:
+ You have modified your Gemfile in development but did not check
+ the resulting snapshot (Gemfile.lock) into version control
+
+ You have added to the Gemfile:
+ * spork
+
+ You have deleted from the Gemfile:
+ * source: git://github.com/refinerycms/rmagick.git (at windows)
+
+ resolved:  remove the test group gems from the Gemfile
+
+4. maunally add setting
+  - a_riding_text (html_safe)
+	  跑马灯文字
+	- a_qq
+	  在线咨询QQ列表，如：453534,23423
+	- a_company_contact (html_safe)
+	  公司联系方式
+	 

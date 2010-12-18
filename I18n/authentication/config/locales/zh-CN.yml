@@ -1,0 +1,83 @@
+zh-CN:
+  plugins:
+    refinery_users:
+      title: '用户'
+  admin:
+    users:
+      delete: '彻底删除该用户'
+      edit: '修改'
+      update:
+        cannot_remove_user_plugin_from_current_user: "你不能删除用户插件"
+      form:
+        blank_password_keeps_current: "留空白表示保留当前密码"
+        enable_all: "使所有生效"
+      index:
+        create_new_user: "添加新用户"
+        no_users_yet:  '还没有新用户，点击 "添加新用户" 添加'
+      user:
+        confirm_delete_message: "你确定要删除 '%{who}'?"
+        confirm_delete_title: "彻底删除该用户"
+        edit_user: "编辑"
+        email_user: "发邮件"
+        preview: "(%{who}) 于 %{created_at} 添加成功"
+  sessions:
+    login_successful: "登录成功"
+    login_failed: "对不起，用户名或密码错误，请检查"
+    logged_out: "退出成功"
+    new:
+      hello_please_sign_in: "你好! 请登录."
+      sign_in: "登录"
+      forgot_password: "忘记密码了？"
+  users:
+    setup_website_name: "首先，请给网站取个名字. <a href='%{link}' name='%{title}'>点击这里</a> 修改网站名字"
+    signup_disabled: "用户注册被禁用"
+    new:
+      fill_form: "请填写以下内容"
+      sign_up: "注册"
+    create:
+      welcome: "欢迎光临, %{who}"
+      signup_complete: "注册成功！"
+    forgot:
+      email_address: "邮箱地址"
+      enter_email_address: "请填写账号的邮箱地址"
+      reset_password: "重置密码"
+      blank_email: "邮箱必填"
+      email_not_associated_with_account: "对不起, '%{email}'关联不到任何帐户.<br/>请确定你输入的邮件地址是否正确?"
+      email_reset_sent: "邮件已经发送到你邮箱，通过邮件内容链接可以修改密码"
+    reset:
+      code_invalid: "对不起，链接已经过期. 请重新操作."
+      successful: "恭喜你，%{email}的密码更新成功"
+      pick_new_password_for: "给%{email}设置一个新邮件"
+      reset_password: "设置新密码"
+      password_blank: "重新输入相同的密码"
+  user_mailer:
+    please_activate: "请激活你的新帐户"
+    activated: "你的帐户已成功激活"
+    activated_email: "%{who}, 你的帐户已成功激活. 现在你可以添加新的插件了："
+    account_created: "你的帐户已成功创建"
+    user_name: "用户名： %{name}"
+    password: "密码：%{password}"
+    visit_url: "通过此链接激活你的帐户:"
+    link_to_reset_your_password: "通过此链接重置密码"
+  authlogic:
+    error_messages:
+      login_blank: "不能为空"
+      login_not_found: "没有找到该账号，请确认"
+      login_invalid: "只能是字母、数字、空格和 .-_@ "
+      consecutive_failed_logins_limit_exceeded: "帐户登录次数过多，已超过登录限制"
+      email_invalid: "请输入正确的邮箱地址"
+      password_blank: "不能为空"
+      password_invalid: "不是有效的"
+      not_active: "你的帐户没有激活"
+      not_confirmed: "你的帐户还没有确认"
+      not_approved: "你的帐户还没有审核通过"
+      no_authentication_details: "没有提供任何身份认证信息"
+    models:
+      user_session: "用户会话"
+    attributes:
+      user_session:
+        login: "登录"
+        email: "邮箱"
+        password: "密码"
+        remember_me: "记住登录状态"
+        incorrect: "对不起 %{login_field} 或密码不正确."

@@ -1,0 +1,38 @@
+zh-CN:
+  plugins:
+    refinery_images:
+      title: '图像'
+  no_file_chosen: '没有选择任何文件，请选择'
+  image_should_be_smaller_than_max_image_size: '文件大小必须小于%{max_image_size}'
+  image_must_be_these_formats: '图片的格式只能为JPG, PNG 或GIF'
+  image_specify_for_upload: '请选择一张图片上传'
+  admin:
+    images:
+      delete: '彻底删除'
+      edit: '修改'
+      form:
+        image: '图像'
+        use_current_image: '使用当前图片'
+        or: '或'
+        replace_image: '替换为这幅图片...'
+        current_image: '当前图片'
+        maximum_image_size: '图片的大小最大允许为 %{megabytes}MB'
+      index:
+        create_new_image: '添加新图像'
+        no_images_yet: "还没有任何图像，点击'添加'上传第一幅图片"
+        view:
+          switch_to: '切换到%{view_name}视图'
+          list: '列表'
+          grid: '网格'
+      grid_view:
+        view_live: '预览图片<br/><em>在新窗口中打开</em>'
+      existing_image:
+        button_text: '插入'
+        resize_image: '要更改图片的大小吗'
+        size: '大小'
+      insert:
+        existing_image: '图片已经存在'
+        new_image: '新图片'
+  activerecord:
+    models:
+      image: '图片'

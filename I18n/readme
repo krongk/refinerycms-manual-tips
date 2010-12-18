@@ -1,0 +1,30 @@
+- Execute the following rake task, to get a list of missing translations
+  $ rake translate:lost_in_translation LOCALE=nl
+  - adding the missing keys to each yml file.
+
+- copy the below locales yml to your new app
+	- common
+		gems/refinerycms-i18n-0.9.8.12/config/locales/zh-CN.yml
+		(when create new app, copy it to the app_name/config/locales/)
+	- engines
+		(when create new app, copy it to the /vendor/refinerycms/xxx/config/locales/)
+		- authentication
+			gems/refinerycms-0.9.8.5/vendor/refinerycms/authentication/config/locales
+		- core
+			gems/refinerycms-0.9.8.5/vendor/refinerycms/core/config/locales/zh-CN.yml
+		- dashboard
+			gems/refinerycms-0.9.8.5/vendor/refinerycms/dashboard/config/locales
+		- images
+			gems/refinerycms-0.9.8.5/vendor/refinerycms/images/config/locales
+		- pages
+			gems/refinerycms-0.9.8.5/vendor/refinerycms/pages/config/locales
+		- resources
+			gems/refinerycms-0.9.8.5/vendor/refinerycms/resources/config/locales
+		- settings
+			gems/refinerycms-0.9.8.5/vendor/refinerycms/settings/config/locales
+		- inquiries
+			gems/refinerycms-inquiries-0.9.8.10/config/locales
+		- news
+			gems/refinerycms-news-0.9.9.6/config/locales
+		- blog
+			gems/refinerycms-blog-1.0.rc16/config/locales

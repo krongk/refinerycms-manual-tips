@@ -1,0 +1,74 @@
+zh-CN:
+  plugins:
+    refinery_inquiries:
+      title: '表单'
+  inquiries:
+    new:
+      header_message: '哎呦,这有一个小问题'
+      message: "以下问题需要加以纠正:"
+      send: '发送信息'
+      privacy_policy: '我们尊重您的隐私'
+  admin:
+    inquiries:
+      inquiry:
+        read_inquiry: "读取"
+        said: "说："
+        mark_as_spam: "移至垃圾邮箱"
+        mark_as_ham: "移动到收件箱"
+      submenu:
+        inbox: "收件箱"
+        spam: "垃圾箱"
+        update_notified: "设置更新通知"
+        edit_confirmation_email: "设置确认邮箱"
+      index:
+        no_inquiries: "还没有任何内容"
+      spam:
+        no_spam: "万岁！您没有任何垃圾邮件"
+      show:
+        details: "详细"
+        age: "时间"
+        actions: "活动情况"
+        back_to_all_inquiries: "返回"
+        spam: "垃圾邮件"
+        spam_yes: '是'
+        inquiry: "留言"
+        to: "送至"
+        from: "来自"
+        click_to_email: "点击发送邮件"
+        phone: "电话"
+        date: "日期"
+        message: "信息"
+      delete: "删除"
+    inquiry_settings:
+      update:
+        updated: "'%{setting}' 设置成功."
+      notification_recipients_form:
+        inquiry_settings_value_name: "填写留言提醒邮箱"
+        explanation: "当网站接收到留言信息后，程序会自动向该邮箱发送一封提醒邮件"
+        hint: "当网站接收到留言信息后，程序会自动向该邮箱发送一封提醒邮件"
+        example: "请正确填写邮箱地址，如: master@inruby.com"
+      confirmation_email_form:
+        to: "送至"
+        from: "来自"
+        subject: "主题"
+        click_to_edit_subject: "修改主题"
+        explanation: "当网站接收到留言信息后，程序会自动向留言者邮箱回复一封邮件"
+        below_edit_email_sent: "您可以修改以下发送内容"
+        the_customer_making_inquiry: "对方邮箱"
+        message: "内容"
+        note: "注意: 请将内容中的 %name% 替换为客户的名字"
+  inquiry_mailer:
+    notification:
+      greeting: '您好'
+      you_recieved_new_inquiry: '您刚刚收到一封来自您网站的表单'
+      inquiry_starts: '--- 内容开始 ---'
+      inquiry_ends: '--- 内容结束 ---'
+      from: '来自'
+      email: '电子邮箱'
+      phone: '电话'
+      message: '信息'
+      closing_line: '亲切的问候'
+      ps: '补充：所有您收到的信息都将保存在<表单>选项菜单中，以供随时查阅'
+  activerecord:
+    models:
+      inquiry: '表单'

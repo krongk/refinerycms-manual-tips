@@ -1,0 +1,23 @@
+zh-CN:
+  plugins:
+    refinery_dashboard:
+      title: "控制面板"
+  admin:
+    dashboard:
+      index:
+        quick_tasks: "快速任务"
+        add_a_new_page: "增加新页"
+        update_a_page: "添加新页面"
+        upload_a_image: "上传图片"
+        upload_a_file: "上传文件"
+        change_language: "选择语言"
+        see_home_page: "显示主页"
+      recent_activity:
+        latest_activity: "最近日志"
+        latest_activity_message: %{what} %{kind} %{action}
+      recent_inquiries:
+        latest_inquiries: "最近留言"
+  updated:
+    'with_article "the"': "已更新"
+  created:
+    'with_article "the"': "已添加"

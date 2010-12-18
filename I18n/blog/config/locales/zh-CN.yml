@@ -1,0 +1,114 @@
+zh-CN:
+  plugins:
+    refinerycms_blog:
+      title: "页面"
+  admin:
+    blog:
+      categories:
+        category:
+          edit: "修改分类"
+          delete: "删除分类"
+        index:
+          no_items_yet: '还没有分类. 请点击 "{{create}}" 创建.'
+      comments:
+        approved: '评论来自： "{{author}}" ，已审核通过.'
+        comment:
+          view_live: '查看评论 <br/><em>(在新窗口中打开)</em>'
+          read: '查看评论'
+          reject: '拒收该评论'
+          approve: '核准该评论'
+        rejected: '评论来自："{{author}}" 已被拒绝.'
+        index:
+          no_items_yet: '{{type}}还没有添加任何评论.'
+        show:
+          comment: '评论'
+          blog_post: '文章'
+          from: '作者：'
+          date: '添加日期：'
+          message: '评论'
+          details: '详细'
+          age: '之前'
+          actions: '活动情况'
+          back: '返回'
+          reject: '拒收该评论'
+          approve: '核准该评论'
+      posts:
+        form:
+          advanced_options: '高级选项'
+          toggle_advanced_options: '点击设置网页meta标签和文章选项'
+          save_as_draft: '保存为草稿'
+          published_at: '发布日期'
+        index:
+          no_items_yet: '还没有任何文章. 请点击 "{{create}}" .'
+        post:
+          view_live: "在线查看 <br/><em>(在新窗口中打开)</em>"
+          edit: '修改'
+          delete: '删除'
+      settings:
+        notification_recipients:
+          value: '发送提醒到'
+          explanation: '当有用户给文章添加评论的时候, 程序会自动通知邮件接收者.'
+          hint: '当有用户给文章添加评论的时候, 程序会自动通知邮件接收者.'
+          example: "填入接收者邮件(可以是多个) 如: jack@inruby.com, jill@inruby.com"
+          updated: '邮件提醒已提交到 "{{recipients}}"'
+      submenu:
+        categories:
+          title: '分类'
+          manage: '管理'
+          new: '创建新分类'
+        comments:
+          title: '评论'
+          title_with_count: '新评论 ({{new_count}})'
+          new: '新'
+          unmoderated: '新'
+          approved: '已审核'
+          rejected: '已拒绝'
+        posts:
+          title: '文章'
+          manage: '管理文章'
+          new: '添加新文章'
+        settings:
+          title: '设置'
+          moderation: '评分审核'
+          update_notified: '修改提醒用户'
+  blog:
+    comment_mailer:
+      notification:
+        greeting: '你好'
+        you_recieved_new_comment: '你的网站刚收到一封新评论'
+        comment_starts: --- comment starts ---
+        comment_ends: --- comment ends ---
+        from: '来自'
+        email: '邮箱'
+        message: '信息'
+        closing_line: '亲切的问候'
+        ps: P.S. All your comments are stored in the "Blog" section of Refinery under the "Comments" submenu should you ever want to view it later there.
+    shared:
+      categories:
+        title: '分类'
+      rss_feed:
+        title: RSS Feed
+      posts:
+        other: '其它文章'
+        created_at: '添加时间： {{when}}'
+        read_more: '更多>>'
+      comments:
+        singular: '评论'
+        none: '还没有评论'
+    categories:
+      show:
+        no_posts: '还没有任何文章'
+    posts:
+      comment: '评论'
+      comments:
+        by: '作者： {{who}}'
+        time_ago: '{{time}} 前'
+        thank_you: '感谢您的评价.'
+        thank_you_moderated: '谢谢您的评价. 你的信息已经添加到消息队列，稍后将会显示在页面.'
+      show:
+        comments:
+          title: '评论'
+          add: '发表评论'
+        other: '其它文章'
+        filed_in: '归档'
+        submit: '发送'

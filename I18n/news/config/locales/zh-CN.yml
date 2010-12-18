@@ -1,0 +1,36 @@
+zh-CN:
+  plugins:
+    refinerycms_news:
+      title: "新闻"
+      description: "展示新闻资讯"
+  admin:
+    news_items:
+      news_item:
+        view_live_html: "在线预览 <br/><em>(在新窗口中打开)</em>"
+        edit: "编辑"
+        delete: "彻底删除"
+        published: "发布"
+      index:
+        actions: "操作"
+        create: "添加新闻"
+        news_item: "新闻"
+        no_items: "还没有任何内容."
+        no_items_yet: '还没有任何内容. 点击 "添加新项".'
+  news_items:
+    show:
+      back_to_index: "返回新闻首页"
+      published: "发布"
+    recent_posts:
+      recent_posts: "当前文章"
+    index:
+      published: "发布"
+      read_more: "阅读更多"
+      no_items_yet: "还没有任何内容"
+  activerecord:
+    attributes:
+      news_item:
+        title: "标题"
+        body: "内容"
+        publish_date: "发布日期"
+    models:
+      news_item: "添加新项"

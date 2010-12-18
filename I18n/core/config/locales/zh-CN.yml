@@ -1,0 +1,72 @@
+zh-CN:
+  welcome:
+    there_are_no_users: "还没有任何用户，请添加一个用户."
+    remember_admin_location: "请记住你的管理员权限:"
+    lets_start: "首先注册一个账户，以登录的网站后台..."
+    continue: "继续..."
+  admin:
+    menu:
+      reorder_menu: "重新排序"
+      reorder_menu_done: "排序完毕"
+    dialogs:
+      show:
+        save: '保存'
+        cancel: '取消'
+  refinery:
+    other: "其他 %{what}"
+    reorder: "排序 %{what}"
+    reorder_done: "完成排序：%{what}"
+    crudify:
+      created: "%{what} 已成功添加."
+      updated: "%{what} 已成功更新."
+      destroyed: "%{what} 已成功删除."
+  shared:
+    site_bar:
+      log_out: "退出"
+      switch_to_your_website: "切换到网站前台"
+      switch_to_your_website_editor: "切换到网站后台"
+    admin:
+      error_messages:
+        problems_in_following_fields: '以下项目出现错误，请检查'
+      continue_editing:
+        save_and_continue_editing: "保存并继续修改"
+      form_actions:
+        or: "或"
+        save: "保存"
+        or_cancel: "或"
+        cancel: "取消"
+        or_continue: "或"
+        cancel_lose_changes: "取消后将会丢失所有改变的内容，你希望  %{object_name} 吗？"
+        delete: "删除"
+        previous: "上一页"
+        next: "下一页"
+        close: "关闭"
+      image_picker:
+        none_selected: "现在还没有任何选择的 %{what}, 请点击这里添加."
+        remove_current: "删除 %{what}"
+        change: "点击这里添加图片"
+        image: "图片"
+        show: "显示"
+      resource_picker:
+        download_current: '下载当前文件'
+        opens_in_new_window: '在新窗口中打开'
+        remove_current: "删除当前文件"
+        no_resource_selected: "现在还没有任何选择的 %{what}, 请点击这里添加."
+        name: '添加文件'
+        current: '当前文件'
+      search:
+        button_text: "搜索"
+        results_for: "搜索内容： '%{query}'"
+        no_results: "没有找到任何结果"
+      delete:
+        message: "确认要删除'%{title}'?"
+        title: "彻底删除 %{object_name}"
+      edit:
+        title: "编辑 %{object_name}"
+    message:
+      close: "关闭"
+      close_this_message: "关闭该信息"
+    draft_page_message:
+      not_live: '该页'
+    footer:
+      copyright: "版权所有&copy;"

@@ -1,0 +1,43 @@
+zh-CN:
+  plugins:
+    refinery_settings:
+      title: "设置"
+      description: "管理插件的设置"
+  admin:
+    refinery_settings:
+      delete: "彻底删除该设置"
+      edit: "编辑该设置"
+      index:
+        new: "添加新设置"
+        empty_set: '还没有任何设置'
+        create_first: '点击这里%{link}添加新设置'
+      form:
+        restart_may_be_in_order: '<strong>请注意：</strong> 你需要重启服务才能使设置生效'
+        yes_make_this_setting_restricted: '设置为超级管理员权限'
+        help:
+          restricted: '该设置的显示和编辑只对超级管理员开放'
+          activity_show_limit: '设置显示在控制面板中的信息数目'
+          analytics_page_code: '该代码将激活Google Analytics，如果为空或者设置为如UA-xxxxxx-x这样的代码，则表示Google Analytics没有生效'
+          image_dialogue_sizes: '在图片栏生效，设置图片的不同剪切大小'
+          image_thumbnails: '如果你修改了此属性，则需要运行命令 rake images:regenerate (或 rake images:update 如果你只是作了更新) 否则该设置不能影响到已存在的图片'
+          menu_hide_children: '隐藏本菜单（导航）中的所有子页面，包括父级页面'
+          new_page_parts: '在页面编辑中，是添加网页部件(page parts)生效'
+          page_title: '设置页面标题，在这里你可以设置自定义CSS类或不同的标签或指定在其它页面的样式'
+          pages_advanced_options_include_seo: '该设置控制SEO优化选项是否显示在页面的高级选项中'
+          preferred_image_view: "该设置控制图片的现实样式 - grid 为 '网格视图'，list 为 '列表视图'，在图片引擎中将自动产生一个按钮来切换视图"
+          refinery_enable_backend_reordering: '该设置控制排序（reorder）是否有效'
+          refinery_menu_cache_action_suffix: '这是用来控制缓存的站点菜单键。如果您使用的是主题( theme)，那么最好保持默认，因为主题自身会设置该键'
+          show_contact_privacy_link: '控制是否在留言信息(contact page)中显示/隐藏法律声明'
+          site_name: '设置网站的名称，网站名称会显示在网页头(header)和页脚(footor)的版权声明部分'
+          theme: '输入需要设置的主题名称, 设置以后主题立马就会生效'
+          use_google_ajax_libraries: "如果你需要使用Google's AJAX CDN, 则设置为true"
+          use_marketable_urls: '将链接从 /pages/about 更改为 /about 并自动修复其它插件的干扰链接'
+          use_resource_caching: '推荐在产品(production)环境启用该设置，该设置会将页面的javascript和stylesheet编译到一个文件，以减少网页请求'
+  activerecord:
+    models:
+      refinery_setting: '设置'
+    attributes:
+      refinery_setting:
+        name: '名称'
+        value: '值'
+        restricted: '权限受限'
